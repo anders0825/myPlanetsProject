@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/other/PlanetIcon.png" type="image/favicon" />
+    <title>HTML & CSS Oppgave 3: Planet Prosjekt</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#">
+        <div id="img-container" title="HOME">
+          <img src="images/other/PlanetIcon.png" alt="website logo" />
+        </div>
+      </a>
+      <ul id="nav-linklist">
+        <a class="text-link" href="#intro-section">
+          <li>PLANETS</li>
+        </a>
+        <a class="text-link" href="#footer">
+          <li>CONTACT</li>
+        </a>
+      </ul>
+    </nav>
+    <header>
+      <h1>THE SOLAR SYSTEM</h1>
+    </header>
+    <section id="intro-section">
+      <h2>Click The Planet you want to learn about:</h2>
+      <div id="intro-img-container">
+        <img
+          src="images/other/solar-system-line_1920.jpg"
+          alt="illustration of the solar , displaying all the planets in the right order"
+          usemap="#navmap"
+        />
+
+        <map name="navmap">
+          <area
+            shape="circle"
+            coords="161, 181, 21"
+            href="#mercury"
+            alt="Mercury"
+          />
+          <area
+            shape="circle"
+            coords="239, 181, 37"
+            href="#venus"
+            alt="Venus"
+          />
+          <area
+            shape="circle"
+            coords="352, 171, 51"
+            href="#moon"
+            alt="The Moon"
+          />
+          <area shape="circle" coords="442, 181, 33" href="#mars" alt="Mars" />
+          <area
+            shape="rect"
+            coords="510, 23, 732, 335"
+            href="#jupiter"
+            alt="Jupiter"
+          />
+          <area
+            shape="circle"
+            coords="868, 181, 109"
+            href="#saturn"
+            alt="Saturn"
+          />
+          <area
+            shape="circle"
+            coords="1086, 179, 70"
+            href="#uranus"
+            alt="Uranus"
+          />
+          <area
+            shape="circle"
+            coords="1252, 180, 67"
+            href="#neptune"
+            alt="Neptune"
+          />
+        </map>
+      </div>
+    </section>
+    <main id="planets">
+      <section id="mercury" class="planet-section">
+        <section id="mercury-bg" class="bg-section">
+          <h2>MERCURY</h2>
+        </section>
+        <section class="planet-grid">
+          <section class="grid-item">
+            <h3>Mercury</h3>
+            <p>
+              Mercury is the smallest planet, only 4,880 km in diameter. It's a
+              dense, rocky planet with a massive iron core making up most of its
+              interior. It orbits just 58 million km from the Sun. A year is
+              only 88 Earth days, but a day (one full rotation) takes 59 Earth
+              days. Known since antiquity, it was observed by Babylonian, Greek,
+              and Roman astronomers.
+            </p>
+          </section>
+          <section class="grid-item">
+            <h3>Mercury Info:</h3>
+            <ul>
+              <li>Volume: 6.08x10^10 km3 (0.056 Earths)</li>
+              <li>Mass:3.30x10^23 kg (0.055 Earths)</li>
+              <li>Surface Gravity: 3.7 m/s2</li>
+              <li>Median Surface Temprature: ~ 167°C</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section id="venus" class="planet-section">
+        <section id="venus-bg" class="bg-section">
+          <h2>VENUS</h2>
+        </section>
+        <section class="planet-grid">
+          <section class="grid-item">
+            <h3>Venus</h3>
+            <p>
+              Venus is nearly Earth's twin in size (12,104 km diameter) and is a
+              rocky planet with a thick carbon-dioxide atmosphere and sulfuric
+              acid clouds. It lies about 108 million km from the Sun. Its orbit
+              takes 225 Earth days, while its rotation is extremely slow and
+              retrograde, lasting 243 Earth days. Also visible to the naked eye,
+              Venus has been observed since ancient times and was first studied
+              telescopically by Galileo in 1610.
+            </p>
+          </section>
+          <section class="grid-item">
+            <h3>Venus Info:</h3>
+            <ul>
+              <li>Volume: 9.28x10^11 (0.86 Earths)</li>
+              <li>Mass: 4.87x10^24 kg (0.82 Earths)</li>
+              <li>Surface Gravity: 8.87 m/s^2</li>
+              <li>Median Surface Temprature: ~ 464°C</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section id="moon" class="planet-section">
+        <section id="moon-bg" class="bg-section">
+          <h2>THE MOON</h2>
+        </section>
+        <section class="planet-grid">
+          <section class="grid-item">
+            <h3>The Moon</h3>
+            <p>
+              Earth's Moon is about 3,474 km across (just over a quarter of
+              Earth's size). It's a rocky body made mostly of silicate minerals
+              with a small iron core. It orbits Earth at an average distance of
+              384,400 km, taking 27.3 days to orbit and rotate (tidally locked,
+              so the same side always faces Earth). It wasn't “discovered” —
+              humans have always seen it — but the first telescopic studies were
+              by Galileo Galilei in 1609.
+            </p>
+          </section>
+          <section class="grid-item">
+            <h3>Moon Info:</h3>
+            <ul>
+              <li>Volume: 2.1958x10^10 km3 (0.02 Earths)</li>
+              <li>Mass: 7.35x10^22 kg (0.001 Earths)</li>
+              <li>Surface Gravity: 1.62 m/s2</li>
+              <li>Median Surface Temprature: ~ -20°C</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section id="mars" class="planet-section">
+        <section id="mars-bg" class="bg-section">
+          <h2>MARS</h2>
+        </section>
+        <section class="planet-grid">
+          <section class="grid-item">
+            <h3>Mars</h3>
+            <p>
+              Mars is about half Earth's size (6,779 km diameter) and is a rocky
+              planet rich in iron oxide (rust), which gives it its red color. It
+              orbits at 228 million km from the Sun. A Martian year lasts 687
+              Earth days, and a day (a “sol”) is just a bit longer than ours at
+              24.6 hours. Known since ancient times, it was documented by early
+              civilizations and studied in detail with telescopes from the 1600s
+              onward.
+            </p>
+          </section>
+          <section class="grid-item">
+            <h3>Mars Info:</h3>
+            <ul>
+              <li>Volume: 1.63x10^11 km3 (0.15 Earths)</li>
+              <li>Mass: 6.42x1023 kg (0.11 Earths)</li>
+              <li>Surface Gravity: 3.72076 m/s2</li>
+              <li>Median Surface Temprature: ~ -65°C</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section id="jupiter" class="planet-section">
+        <section id="jupiter-bg" class="bg-section">
+          <h2>JUPITER</h2>
+        </section>
+        <section class="planet-grid">
+          <section class="grid-item">
+            <h3>Jupiter</h3>
+            <p>
+              Jupiter is the giant of the Solar System, with a diameter of
+              139,820 km. It's a gas giant made mostly of hydrogen and helium
+              with no solid surface. It orbits at about 778 million km from the
+              Sun, taking 12 Earth years to complete a year, but it spins
+              rapidly — a day is just 10 hours. Observed since antiquity, its
+              four largest moons were discovered by Galileo in 1610.
+            </p>
+          </section>
+          <section class="grid-item">
+            <h3>Jupiter Info:</h3>
+            <ul>
+              <li>Volume: 1.43x10^15 km3 (1321 Earths)</li>
+              <li>Mass: 1.90x10^27 kg (317.8 Earths)</li>
+              <li>Surface Gravity: 24.79 m/s2</li>
+              <li>Median Surface Temprature: ~ -110°C</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section id="saturn" class="planet-section">
+        <section id="saturn-bg" class="bg-section">
+          <h2>SATURN</h2>
+        </section>
+        <section class="planet-grid">
+          <section class="grid-item">
+            <h3>Saturn</h3>
+            <p>
+              Saturn is famous for its rings and measures 116,460 km across.
+              Like Jupiter, it's a gas giant mostly made of hydrogen and helium.
+              It orbits at 1.4 billion km from the Sun, with a year lasting
+              about 29 Earth years, and it rotates quickly — one day is about
+              10.7 hours. Known since ancient times, its rings were first seen
+              by Galileo in 1610, though Christiaan Huygens (1655) correctly
+              identified them.
+            </p>
+          </section>
+          <section class="grid-item">
+            <h3>Saturn Info:</h3>
+            <ul>
+              <li>Volume: 8.27x10^14 km3 (764 Earths)</li>
+              <li>Mass: 5.68x10^26 kg (95.16 Earths)</li>
+              <li>Surface Gravity: 10.44 m/s2</li>
+              <li>Median Surface Temprature: ~ -140°C</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section id="uranus" class="planet-section">
+        <section id="uranus-bg" class="bg-section">
+          <h2>URANUS</h2>
+        </section>
+        <section class="planet-grid">
+          <section class="grid-item">
+            <h3>Uranus</h3>
+            <p>
+              Uranus is an ice giant about 50,724 km in diameter, made mostly of
+              hydrogen, helium, and “ices” like water, methane, and ammonia. It
+              orbits 2.9 billion km from the Sun. A year lasts 84 Earth years,
+              while a day is 17 hours. Discovered with a telescope by William
+              Herschel in 1781, it was the first planet found in modern times.
+            </p>
+          </section>
+          <section class="grid-item">
+            <h3>Uranus Info:</h3>
+            <ul>
+              <li>Volume: 6.83x10^13 km3 (63.1 Earths)</li>
+              <li>Mass: 8.68x10^25 kg (14.54 Earths)</li>
+              <li>Surface Gravity: 8.69 m/s2</li>
+              <li>Median Surface Temprature: ~ -195°C</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section id="neptune" class="planet-section">
+        <section id="neptune-bg" class="bg-section">
+          <h2>NEPTUNE</h2>
+        </section>
+        <section class="planet-grid">
+          <section class="grid-item">
+            <h3>Neptune</h3>
+            <p>
+              Neptune is the smallest ice giant at 49,244 km across and is
+              composed of hydrogen, helium, and a high proportion of “ices” like
+              water and methane (which gives it its blue color). It orbits about
+              4.5 billion km from the Sun, with a year lasting 165 Earth years,
+              and rotates in about 16 hours. It was discovered in 1846 by Johann
+              Galle, based on predictions from Uranus's orbital irregularities.
+            </p>
+          </section>
+          <section class="grid-item">
+            <h3>Neptune Info:</h3>
+            <ul>
+              <li>Volume: 6.25x10^13 km3 (57.7 Earths)</li>
+              <li>Mass: 1.02x10^26 kg (17.15 Earths)</li>
+              <li>Surface Gravity: 11.15 m/s2</li>
+              <li>Median Surface Temprature: ~ -200°C</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer id="footer">
+      <section id="footer-container">
+        <img src="images/other/PlanetIcon.png" alt="website logo" />
+        <section id="contact-section">
+          <h3>Contact Us At:</h3>
+          <ul>
+            <li>anders@fakemail.com</li>
+            <li>lenerenate@fakemail.com</li>
+          </ul>
+        </section>
+        <section id="footer-info">
+          <p>Page Last Edited: 02.10.2025</p>
+          <p>AndAteCO © All Rights Reserved</p>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>

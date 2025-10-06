@@ -1,0 +1,258 @@
+:root {
+  --background: #0b0c10;
+  --header-bg: #0f1118;
+  --nav: #0d1b2a;
+  --heading-text: #1e847f;
+  --main-text: #7b8794;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  width: 100svw;
+  background-color: var(--background);
+  color: var(--main-text);
+  font-size: 18px;
+  font-family: monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  padding: 0px 20px;
+  width: 100svw;
+  max-width: 100svw;
+  background-color: var(--nav);
+}
+
+nav #img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+nav img {
+  height: 40px;
+  padding: 3px;
+}
+
+nav img:hover {
+  content: url(images/other/PlanetIcon_navy.png);
+}
+
+nav #nav-linklist {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+nav .text-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--heading-text);
+}
+
+nav .text-link:hover,
+#img-container:hover {
+  background-color: var(--heading-text);
+  color: var(--nav);
+}
+
+header {
+  width: 100svw;
+  height: 100svh;
+  max-height: 1000px;
+
+  background-image: url(images/other/earth-nasa-large-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: red;
+}
+
+header h1 {
+  letter-spacing: 5px;
+  padding: 50px;
+  font-size: 50px;
+  color: var(--heading-text);
+}
+
+#intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 20px;
+
+  padding: 100px 0;
+
+  width: 100svw;
+
+  background-color: var(--background);
+}
+
+#intro-section img {
+  width: 1390px;
+  border-radius: 5px;
+}
+
+#intro-img-container {
+  max-width: 95svw;
+  overflow: scroll;
+  border-radius: 5px;
+}
+
+.planet-section {
+  width: 100svw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.planet-section .bg-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: red;
+
+  width: 100svw;
+  height: 500px;
+}
+
+.planet-section .bg-section h2 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  backdrop-filter: blur(1px);
+  background-color: #0b0c10ca;
+  color: var(--heading-text);
+}
+
+.planet-section #mercury-bg {
+  background-image: url(images/mercury/mercury_landscape_1920x1080px.png);
+}
+.planet-section #venus-bg {
+  background-image: url(images/venus/venus_landscape_1920x1080px.png);
+}
+.planet-section #moon-bg {
+  background-image: url(images/moon/moon_landscape_1920x1080px.png);
+}
+.planet-section #mars-bg {
+  background-image: url(images/mars/mars_landscape_1920x1080px.png);
+}
+.planet-section #jupiter-bg {
+  background-image: url(images/jupiter/jupiter_landscape_1920x1080px.png);
+}
+.planet-section #saturn-bg {
+  background-image: url(images/saturn/saturn_landscape_1920x1080px.png);
+}
+.planet-section #uranus-bg {
+  background-image: url(images/uranus/uranus_landscape_1920x1080px.png);
+}
+.planet-section #neptune-bg {
+  background-image: url(images/neptune/neptune_landscape_1920x1080px.png);
+}
+
+.planet-section .planet-grid {
+  width: 90svw;
+  max-width: 1060px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 100px 0;
+}
+
+.planet-section .planet-grid .grid-item {
+  padding: 20px;
+}
+
+.planet-section .planet-grid .grid-item:first-child {
+  grid-column: 1 / span 2;
+}
+
+.planet-section .planet-grid .grid-item h3 {
+  color: var(--heading-text);
+  border-bottom: 1px solid var(--heading-text);
+}
+
+.planet-section .planet-grid .grid-item ul {
+  list-style: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  width: 100svw;
+  padding: 50px 0;
+
+  background-color: var(--nav);
+}
+
+footer #footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  gap: 20px;
+
+  width: 80svw;
+}
+
+footer img {
+  width: 40px;
+}
+
+footer #contact-section {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#contact-section h3 {
+  font-size: 30px;
+  color: var(--main-text);
+}
+
+#contact-section ul {
+  list-style: none;
+}
+
+#footer-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--main-text);
+  padding-top: 30px;
+}
